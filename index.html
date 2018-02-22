@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brighton Times</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" class="touch" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <style>
+
+      @media screen and (max-width: 530px) {
+        .header__logo {
+          position: absolute;
+          transform: translate(-200px,0);
+        }
+        .header__title {
+          font-size: 3em;
+        }
+      }
+
+      @media screen and (min-width: 750px) {
+        .hero {
+          width: 60%;
+          order: -4;
+        }
+        .weather {
+          width: 40%;
+          order: -3;
+        }
+        .top-news {
+          width: 60%;
+          order: -2;
+        }
+        .scores {
+          width: 40%;
+          order: -1;
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        body {
+          width: 1200px;
+          margin: 0 auto;
+        }
+      }
+
+      @media screen and (max-width: 350px) {
+        .long-day, .long-team {
+          display: none;
+        }
+      }
+
+      @media screen and (min-width: 351px) and (max-width: 749px) {
+        .short-day, .short-team {
+          display: none;
+        }
+      }
+
+      @media screen and (min-width: 750px) and (max-width: 1000px) {
+        .long-day, .long-team {
+          display: none;
+        }
+      }
+
+      @media screen and (min-width: 1001px) {
+        .short-day, .short-team {
+          display: none;
+        }
+      }
+
+      @media screen and (min-width: 650px) {
+        body {
+          font-size: 15px;
+        }
+        .recent-news p, .hero p {
+          font-size: 16px;
+        }
+        .snippet__title, .news__title, .top-news__item {
+          font-size: 18px;
+        }
+
+      @media screen and (min-width: 800px) {
+        .hero {
+          background-image: url("./images/pug-superheroes.jpg");
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header__inner">
+        <img class="header__logo" src="images/city.png" alt="iconic view of a cityscape">
+        <h1 class="header__title">
+          The Brighton Times
+        </h1>
+      </div>
+    </header>
+
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="touch" >News</a></li>
+        <li class="nav__item"><a href="#" class="touch" >Events</a></li>
+        <li class="nav__item"><a href="#" class="touch" >Culture</a></li>
+        <li class="nav__item"><a href="#" class="touch" >Blog</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="content">
+        <section class="hero">
+          <article class="description">
+            <h2>Absolutely astonishing breaking news!</h2>
+            <p>Organic raw denim Vice keffiyeh lomo Kickstarter art lomo Kickstarter art four loko. Organic raw denim Vice keffiyeh lomo Kickstarter art lomo Kickstarter art four loko.</p>
+          </article>
+        </section>
+
+        <section class="news top-news">
+          <h2 class="news__title">Top news <a href="#" class="news__more">+ more</a></h2>
+          <ul>
+            <li class="top-news__item">
+              <a href="#" class="touch">Gastropub distillery Marfa farm-to-table, Etsy Truffaut fingerstache.</a>
+            </li>
+            <li class="top-news__item">
+              <a href="#" class="touch">Squid lomo Kickstarter art lomo Kickstarter art party cronut scenester.</a>
+            </li>
+            <li class="top-news__item">
+              <a href="#" class="touch">Organic raw denim lomo Kickstarter art Vice keffiyeh four loko.</a>
+            </li>
+            <li class="top-news__item">
+              <a href="#" class="touch">Organic raw denim Vice keffiyeh lomo Kickstarter art lomo Kickstarter art four loko.</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="scores">
+          <table class="scores__table">
+            <thead>
+              <tr>
+                <th class="scores__date">Date</th>
+                <th>Team</th>
+                <th colspan="2">Score</th>
+                <th>Team</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="long-day">Friday</span><span class="short-day">Fri</span></td>
+                <td class="winner"><span class="long-team">England</span><span class="short-team">Eng</span></td>
+                <td class="winner">26</td>
+                <td>15</td>
+                <td><span class="long-team">Ireland</span><span class="short-team">Ire</span></td>
+              </tr>
+              <tr>
+                <td><span class="long-day">Friday</span><span class="short-day">Fri</span></td>
+                <td class="winner"><span class="long-team">Italy</span><span class="short-team">Ita</span></td>
+                <td class="winner">13</td>
+                <td>11</td>
+                <td><span class="long-team">Scotland</span><span class="short-team">Sco</span></td>
+              </tr>
+              <tr>
+                <td><span class="long-day">Saturday</span><span class="short-day">Sat</span></td>
+                <td class="winner"><span class="long-team">Wales</span><span class="short-team">Wal</span></td>
+                <td class="winner">17</td>
+                <td>10</td>
+                <td><span class="long-team">France</span><span class="short-team">Fra</span></td>
+              </tr>
+              <tr>
+                <td><span class="long-day">Sunday</span><span class="short-day">Sun</span></td>
+                <td><span class="long-team">Tottenham</span><span class="short-team">Tot</span></td>
+                <td>2</td>
+                <td class="winner">3</td>
+                <td class="winner"><span class="long-team">Rochdale</span><span class="short-team">Roc</span></td>
+              </tr>
+              <tr>
+                <td><span class="long-day">Sunday</span><span class="short-day">Sun</span></td>
+                <td class="winner"><span class="long-team">Peterborough</span><span class="short-team">Pbr</span></td>
+                <td class="winner">4</td>
+                <td>2</td>
+                <td><span class="long-team">Wolves</span><span class="short-team">Wol</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="weather">
+          <span class="weather__location">Brighton, UK</span>
+          <span class="weather__desc">Sunny</span>
+          <span class="weather__today">
+          <img class="weather__today__image" src="images/weather.png" alt="icon of a partially sunny day"><span class="weather__today__temp">13</span><span class="weather__today__deg">&deg;C</span>
+          </span>
+          <ul class="weather__next">
+            <li class="weather__next__item">
+              <span>Mon</span>
+              <img class="weather__next__image" src="images/sunny.png" alt="icon of a sunny day">
+              <span>13 &deg;C</span>
+            </li><li class="weather__next__item">
+              <span>Tues</span>
+              <img class="weather__next__image" src="images/cloudy.png" alt="icon of a cloudy day">
+              <span>13 &deg;C</span>
+            </li><li class="weather__next__item">
+              <span>Wed</span>
+              <img class="weather__next__image" src="images/cloudy.png" alt="icon of a cloudy day">
+              <span>13 &deg;C</span>
+            </li><li class="weather__next__item">
+              <span>Thu</span>
+              <img class="weather__next__image" src="images/rain.png" alt="icon of a rainy day">
+              <span>13 &deg;C</span>
+            </li><li class="weather__next__item">
+              <span>Fri</span>
+              <img class="weather__next__image" src="images/sunny.png" alt="icon of a sunny day">
+              <span>13 &deg;C</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="news recent-news">
+          <h2 class="news__title">Latest news <a href="#" class="news__more touch">+ more</a></h2>
+          <ul>
+            <li class="snippet">
+              <img class="snippet__thumbnail" src="images/dog.jpg" alt="picture of a girl with a large, stuffed dog toy">
+              <h3 class="snippet__title"><a href="#" class="touch">Gastropub distillery Marfa farm-to-table</a></h3>
+              <p>Gastropub distillery Marfa farm-to-table, Etsy Truffaut fingerstache.
+              Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.
+              </p>
+            </li>
+            <li class="snippet">
+              <img class="snippet__thumbnail" src="images/dog.jpg" alt="picture of a girl with a large, stuffed dog toy">
+              <h3 class="snippet__title"><a href="#" class="touch">Organic raw keffiyeh four loko.</a></h3>
+              <p>Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice loko.
+              </p>
+            </li>
+            <li class="snippet">
+              <img class="snippet__thumbnail" src="images/dog.jpg" alt="picture of a girl with a large, stuffed dog toy">
+              <h3 class="snippet__title"><a href="#" class="touch">Kickstarter art party cronut scenester.</a></h3>
+              <p>Gastropub distillery Marfa farm-to-table, Etsy Truffaut fingerstache.
+              Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko.
+              </p>
+            </li>
+            <li class="snippet">
+              <img class="snippet__thumbnail" src="images/dog.jpg" alt="picture of a girl with a large, stuffed dog toy">
+              <h3 class="snippet__title"><a href="#" class="touch">Squid lomo Kickstarter art party cronut </a></h3>
+              <p>Gastropub distillery Marfa farm-to-table, Etsy Truffaut fingerstache.
+              Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <footer>
+        <ul>
+          <li><a href="#" class="touch">Contact us</a></li>
+          <li><a href="#" class="touch">Follow us on Twitter</a></li>
+          <li><a href="#" class="touch">RSS</a></li>
+        </ul>
+      </footer>
+    </main>
+  </body>
+</html>
